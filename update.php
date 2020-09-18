@@ -2,7 +2,7 @@
 // Include config file
 require_once "config.php";
  
-// Define variables and initialize with empty values
+// Define variables and initialize with empty values 
 $name = $address = $salary = "";
 $name_err = $address_err = $salary_err = "";
  
@@ -11,7 +11,7 @@ if(isset($_POST["id"]) && !empty($_POST["id"])){
     // Get hidden input value
     $id = $_POST["id"];
     
-    // Validate name
+    // Validate input name
     $input_name = trim($_POST["name"]);
     if(empty($input_name)){
         $name_err = "Please enter a name.";
